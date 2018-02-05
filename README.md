@@ -234,39 +234,41 @@ Basically, the slope of a line from the origin to each datapoint tells us how ma
 
 #### Word clouds
 
-What words are used really often?
+##### What words are used really often?
 
 It looks like some of these are character names.
-##### EAP
+
+###### EAP
 ![EAP common words](./figs/EAP_common_wordcloud.png)
 
-##### HPL
+###### HPL
 ![HPL common words](./figs/HPL_common_wordcloud.png)
 
-##### MWS
+###### MWS
 ![MWS common words](./figs/MWS_common_wordcloud.png)
 
-What are some words used less often?
-##### EAP
+##### What are some words used less often?
+
+###### EAP
 ![EAP medium-frequency words](./figs/EAP_mid_wordcloud.png)
 
-##### HPL
+###### HPL
 ![HPL medium-frequency words](./figs/HPL_mid_wordcloud.png)
 
-##### MWS
+###### MWS
 ![MWS medium-frequency words](./figs/MWS_mid_wordcloud.png)
 
-
-What are some words used almost never?
+##### What are some words used almost never?
 
 These are almost the most revealing of the set!
-##### EAP
+
+###### EAP
 ![EAP low-frequency words](./figs/EAP_low_wordcloud.png)
 
-##### HPL
+###### HPL
 ![HPL low-frequency words](./figs/HPL_low_wordcloud.png)
 
-##### MWS
+###### MWS
 ![MWS low-frequency words](./figs/MWS_low_wordcloud.png)
 
 #### Gender imparity
@@ -508,43 +510,39 @@ We're going to make up a paragraph by using the trigrams we generated! Maybe thi
 Let's look at a few randomly chosen sentences and what words from each are positive and negative. The blank spaces mean there wasn't any word in that category (positive or negative) in that sentence.
 
 ###### EAP
-            negative  positive
+negative			positive
             
-1:                        free
+					free
 
-2:              alas          
+alas          
 
-3: confusion,despair   lighten
+confusion,despair	lighten
 
-4:                   gentleman
+					gentleman
 
-5:         surrender       
+surrender       
 
 ###### HPL
-   negative                                     positive
+negative	positive
    
-1: needless wonderful,ingenious,useful,useful,like,like,
+needless	wonderful,ingenious,useful,useful,like,like,
 
-2:      ill                                             
+ill                                             
 
-3:                                      properly,natural
+			properly,natural
 
-4:                                                      
-
-5:                                                      
+                                                   
 
 ###### MWS
-                                negative               positive
-                                
-1:                                  slow   restored,wonderfully
+negative								positive
 
-2:        epidemic,force,pernicious,harm                       
+slow									restored,wonderfully
 
-3:                                       adorned,aid,art,favour
+epidemic,force,pernicious,harm
 
-4: wretched,die,fear,famine,struck,wild,                        (yeah, that seems right!)
+										adorned,aid,art,favour
 
-5:                                                                
+wretched,die,fear,famine,struck,wild,							(yeah, that seems right!)
 
 ##### Most extreme sentences
 What are the most positive and negative sentences? From these examples, it's clear what a crude metric the sentiment calculation is: more of a heuristic than a really reflective score. Still, it's interesting to look at!
@@ -552,17 +550,20 @@ What are the most positive and negative sentences? From these examples, it's cle
 ###### EAP
 Positive:
 > To die laughing, must be the most glorious of all glorious deaths Sir Thomas More a very fine man was Sir Thomas More Sir Thomas More died laughing, you remember.
+
 Negative:
 > Yet its memory was replete with horror horror more horrible from being vague, and terror more terrible from ambiguity.
 ###### HPL
 Positive:
 > I won't say that all this is wholly true in body, but 'tis sufficient true to furnish a very pretty spectacle now and then.
+
 Negative:
 > The odour of the fish was maddening; but I was too much concerned with graver things to mind so slight an evil, and set out boldly for an unknown goal.
 
 ###### MWS
 Positive:
 > Oh no I will become wise I will study my own heart and there discovering as I may the spring of the virtues I possess I will teach others how to look for them in their own souls I will find whence arrises this unquenshable love of beauty I possess that seems the ruling star of my life I will learn how I may direct it aright and by what loving I may become more like that beauty which I adore And when I have traced the steps of the godlike feeling which ennobles me makes me that which I esteem myself to be then I will teach others if I gain but one proselyte if I can teach but one other mind what is the beauty which they ought to love and what is the sympathy to which they ought to aspire what is the true end of their being which must be the true end of that of all men then shall I be satisfied think I have done enough Farewell doubts painful meditation of evil the great, ever inexplicable cause of all that we see I am content to be ignorant of all this happy that not resting my mind on any unstable theories I have come to the conclusion that of the great secret of the universe I can know nothing There is a veil before it my eyes are not piercing enough to see through it my arms not long enough to reach it to withdraw it I will study the end of my being oh thou universal love inspire me oh thou beauty which I see glowing around me lift me to a fit understanding of thee Such was the conclusion of my long wanderings I sought the end of my being I found it to be knowledge of itself Nor think this a confined study Not only did it lead me to search the mazes of the human soul but I found that there existed nought on earth which contained not a part of that universal beauty with which it was my aim object to become acquainted the motions of the stars of heaven the study of all that philosophers have unfolded of wondrous in nature became as it where sic the steps by which my soul rose to the full contemplation enjoyment of the beautiful Oh ye who have just escaped from the world ye know not what fountains of love will be opened in your hearts or what exquisite delight your minds will receive when the secrets of the world will be unfolded to you and ye shall become acquainted with the beauty of the universe Your souls now growing eager for the acquirement of knowledge will then rest in its possession disengaged from every particle of evil and knowing all things ye will as it were be mingled in the universe ye will become a part of that celestial beauty that you admire Diotima ceased and a profound silence ensued the youth with his cheeks flushed and his eyes burning with the fire communicated from hers still fixed them on her face which was lifted to heaven as in inspiration The lovely female bent hers to the ground after a deep sigh was the first to break the silence Oh divinest prophetess, said she how new to me how strange are your lessons If such be the end of our being how wayward a course did I pursue on earth Diotima you know not how torn affections misery incalculable misery withers up the soul.
+
 Negative:
 > He could have endured poverty, and while this distress had been the meed of his virtue, he gloried in it; but the ingratitude of the Turk and the loss of his beloved Safie were misfortunes more bitter and irreparable.
 
@@ -616,7 +617,7 @@ We use a topic modeling algorithm called LDA, with a sampling algorithm called G
 > now friend raymond gave place father
 
 3.
-> seemed eyes thoguht still felt heart
+> seemed eyes thought still felt heart
 
 4.
 > first made thus every now without
@@ -675,7 +676,9 @@ We use a topic modeling algorithm called LDA, with a sampling algorithm called G
 
 #### Algorithm 2
 
-This time, we use CTM, and show the same results. Didn't have time for the algorithm to finish running by class, sorry!
+This time, we use CTM, and show the same results.
+
+I'd like to add more commentary, but ran out of time before class.
 
 ##### Terms associated with generated topics
 1.
