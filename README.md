@@ -41,11 +41,11 @@ We'll try to determine *quantitative* metrics to learn something rigorous about 
 
 Along the way, as we think about what to explore, we can use our intuition and *qualitative* understanding of:
 1. what it means in the first place for an author to have a "writing style," and
-2. what we know offt-the-cuff as English-speakers about Shelley, Lovecraft, and Poe.
+2. what we know off-the-cuff as English-speakers about Shelley, Lovecraft, and Poe.
 
 Perhaps it's helpful to use a little math notation to unpack the first idea.
 
-We make a major assumption that any given author as some overarching, enduring style $S_\text{author}$ that is manifested in the individual documents $\{d_i}\}$ that form that author's corpus, and that this style can be *characterized* (not *constituted*) by a set of quantitatively determined *characteristics* $\{c_i\}$ that we can calculate, compare, and use to differentiate between authors.
+We make a major assumption that any given author as some overarching, enduring style $S_\text{author}$ that is manifested in the individual documents $\{d_i\}$ that form that author's corpus, and that this style can be *characterized* (not *constituted*) by a set of quantitatively determined *characteristics* $\{c_i\}$ that we can calculate, compare, and use to differentiate between authors.
 
 Here are some examples of off-the-cuff intuitions we might have about these authors:
 
@@ -79,11 +79,27 @@ Here, we'll show the visualizations that were generated in trying to answer the 
 
 #### How big is the dataset?
 
-#### How many sentences do we have from each author?
+There are 19,579 sentences total. Wow!
 
 #### Color assignment
 
 To help make our data visualizations more intuitive, we'll give each author a color that comes from their most famous character.
+
+* pure *black* for Poe (EAP), because we're all thinking about the raven,
+\input{figs/raven.gif}
+
+* a frightening deep *aquamarine*---symbolizing Cthulhu---for Lovecraft (HPL),
+\includegraphics[]{figs/cthulhu.jpg}
+
+* and a sickly *green*---recalling Dr. Frankenstein's monster---for Shelley (MWS).
+\includegraphics[]{figs/frankenstein.jpg}
+
+#### How many sentences do we have from each author?
+
+\includegraphics[]{figs/g_total_sentences.png}
+
+
+
 
 #### How long do everyone's sentences tend to be?
 
