@@ -93,6 +93,7 @@ To help make our data visualizations more intuitive, we'll give each author a co
 
 * and a sickly *green*---recalling Dr. Frankenstein's monster---for Shelley (MWS).
 \includegraphics[]{figs/frankenstein.jpg}
+![The (misunderstood!) Monster](../figs/frankenstein.jpg)
 
 #### How many sentences do we have from each author?
 
