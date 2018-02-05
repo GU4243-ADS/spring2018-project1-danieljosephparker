@@ -95,18 +95,27 @@ To help make our data visualizations more intuitive, we'll give each author a co
 ![The (misunderstood!) Monster](./figs/frankenstein.jpg)
 
 #### How many sentences do we have from each author?
+We can see there are *by far* more sentences by Poe than the others -- about 2,000 more.
+
+One implication is we'll have to be careful about comparing absolute counts of quantities, cause the individual author datasets are of different sizes.
+
 ![Total sentences by author](./figs/g_total_sentences.png)
 
 #### How long do everyone's sentences tend to be?
+Lovecraft's are the most consistent, and Shelley's are the most extremely skewed.
+
 ##### Seen as histograms
 ![EAP sentence length distribution](./figs/g_EAP_sent_char_dist.png)
 ![HPL sentence length distribution](./figs/g_HPL_sent_char_dist.png)
 ![MWS sentence length distribution](./figs/g_MWS_sent_char_dist.png)
 
 ##### Seen as boxplots
+Clearly, Poe tends to write the shortest sentences!
 ![Compared sentence lengths](./figs/g_sent_char_box.png)
 
 #### What are the longest and shortest sentences from each?
+We can see that some of the longest sentences, especially in the case of Shelley, seem to be outliers: they're actually a bunch of shorter sentences lumped together by mistake.
+
 ##### EAP
 ###### Longest
 > "Burning with the chivalry of this determination, the great Touch and go, in the next 'Tea Pot,' came out merely with this simple but resolute paragraph, in reference to this unhappy affair: 'The editor of the \"Tea Pot\" has the honor of advising the editor of the \"Gazette\" that he the \"Tea Pot\" will take an opportunity in tomorrow morning's paper, of convincing him the \"Gazette\" that he the \"Tea Pot\" both can and will be his own master, as regards style; he the \"Tea Pot\" intending to show him the \"Gazette\" the supreme, and indeed the withering contempt with which the criticism of him the \"Gazette\" inspires the independent bosom of him the \"TeaPot\" by composing for the especial gratification ? of him the \"Gazette\" a leading article, of some extent, in which the beautiful vowel the emblem of Eternity yet so offensive to the hyper exquisite delicacy of him the \"Gazette\" shall most certainly not be avoided by his the \"Gazette's\" most obedient, humble servant, the \"Tea Pot.\" \"So much for Buckingham\"' In fulfilment of the awful threat thus darkly intimated rather than decidedly enunciated, the great Bullet head, turning a deaf ear to all entreaties for 'copy,' and simply requesting his foreman to 'go to the d l,' when he the foreman assured him the 'Tea Pot' that it was high time to 'go to press': turning a deaf ear to everything, I say, the great Bullet head sat up until day break, consuming the midnight oil, and absorbed in the composition of the really unparalleled paragraph, which follows: 'So ho, John how now?"
@@ -133,45 +142,79 @@ Let's look at the interesting words, and get rid of words like "and," "to," etc.
 
 #### Word length
 
-What are the longest words from each?
+What are the longest words from each? 
+
+It's interesting to see so much overlap! For example, "characteristically" shows up in both Poe and Shelley.
+
+(The third column is how many letters are in a word.)
 
 ##### EAP
-1	vondervotteimittiss	19	(Honestly, I'm not even sure)	
+1	vondervotteimittiss	19	(Honestly, I'm not even sure)
+	
 2	incommunicativeness	19		
+
 3	characteristically	18		
+
 4	vondervotteimittis	18	(?)
+
 5	goosetherumfoodle	17	(?)
+
 6	conventionalities	17		
+
 7	contradistinction	17		
+
 8	sanctimoniousness	17		
+
 9	consubstantialism	17		
+
 10	transcendentalism	17	
 
 ##### HPL
 1	congregationalists	18		
+
 2	disproportionately	18		
+
 3	misrepresentations	18		
+
 4	indistinguishable	17		
-5	inappropriateness	17		
-6	unaussprechlichen	17		
-7	inarticulateness	16		
-8	incomprehensible	16		
-9	indiscriminately	16		
+
+5	inappropriateness	17	
+	
+6	unaussprechlichen	17	
+	
+7	inarticulateness	16	
+	
+8	incomprehensible	16	
+	
+9	indiscriminately	16	
+	
 10	enthusiastically	16	
 
 ##### MWS
 1	characteristically	18		
+
 2	disinterestedness	17		
+
 3	selfconcentrated	16		
+
 4	prognostications	16		
-5	unextinguishable	16		
+
+5	unextinguishable	16	
+	
 6	perpendicularity	16		
+
 7	impracticability	16		
+
 8	enthusiastically	16		
+
 9	considerateness		15		
+
 10	prognosticators		15	
 
-How long do everyone's words tend to be?
+#### How long do everyone's words tend to be?
+
+When we make histograms, it's pretty hard to tell differences between the authors. Oh well!
+
 ##### EAP
 ![EAP word length distribution](./figs/g_EAP_word_length.png)
 
@@ -185,11 +228,15 @@ How long do everyone's words tend to be?
 
 How much do they tend to repeat or not repeat words - how "spread out" is their vocabulary?
 
+Basically, the slope of a line from the origin to each datapoint tells us how many unique words the author uses. Clearly, HPL is *way* higher than the other two!
+
 ![Ratio of unique words to total corpus word number](./figs/g_voc_proportions.png)
 
 #### Word clouds
 
 What words are used really often?
+
+It looks like some of these are character names.
 ##### EAP
 ![EAP common words](./figs/EAP_common_wordcloud.png)
 
@@ -201,16 +248,18 @@ What words are used really often?
 
 What are some words used less often?
 ##### EAP
-![EAP medium-frequency words](./figs/EAP_mid_wordcloud.pdf)
+![EAP medium-frequency words](./figs/EAP_mid_wordcloud.png)
 
 ##### HPL
-![HPL medium-frequency words](./figs/HPL_mid_wordcloud.pdf)
+![HPL medium-frequency words](./figs/HPL_mid_wordcloud.png)
 
 ##### MWS
-![MWS medium-frequency words](./figs/MWS_mid_wordcloud.pdf)
+![MWS medium-frequency words](./figs/MWS_mid_wordcloud.png)
 
 
 What are some words used almost never?
+
+These are almost the most revealing of the set!
 ##### EAP
 ![EAP low-frequency words](./figs/EAP_low_wordcloud.png)
 
@@ -224,9 +273,13 @@ What are some words used almost never?
 
 How often do the authors use gender pronouns for women and men, overall? (a crude Bechdel test)
 
-![Agglomerate gender pronoun piechart](.figs/g_total_gen_pron.png)
+We can see about one fourth of *all* gender pronouns are female. Not so good.
+
+![Agglomerate gender pronoun piechart](./figs/g_total_gen_pron.png)
 
 And individually?
+
+We can see that Shelley does the best, and Lovecraft very badly: not a single instance of the word "hers" shows up in his entire portion of the Spooky Dataset.
 
 ##### EAP
 ![EAP gender pronouns](./figs/g_EAP_gen_pron.png)
@@ -243,58 +296,105 @@ What names of people and places show up?
 
 This is computationally intensive, so we only did a random sample of 100 sentences from each author.
 
+So, it looks like maybe the place recognition engine doesn't do quite a good enough job of coming up with specific local places, but it does find a lot of large-scale places like countries.
+
 ##### EAP
    features             name
+   
 1    person          John A.
+
 2    person          John A.
+
 3    person Monsieur Simpson
+
 4    person            Marie
+
 5    person            Marie
+
 6    person           Daddy"
+
 7    person            Daddy
+
 8    person           Robert
+
 9    person           Marie"
+
 10   person    Roman Emperor
+
 11 location        Baltimore
+
 12 location         Le Blanc
+
 13 location          Mercury
+
 14 location           France
+
 15 location             Rome
 
 ##### HPL
    features          name
+   
 1    person Robert Jermyn
+
 2    person        Gilman
+
 3    person        Michel
+
 4    person Arthur Jermyn
+
 5    person        Angell
+
 6    person    Joe Czanek
+
 7    person  Manuel Silva
+
 8  location            St
+
 9  location  Water Street
+
 10 location         Brook
+
 11 location          West
 
 ##### MWS
    features          name
+   
 1    person         Felix
+
 2    person         Felix
+
 3    person        Claude
+
 4    person        Lionel
+
 5    person       Raymond
+
 6    person       Perdita
+
 7    person       Raymond
+
 8    person       Raymond
+
 9  location         Italy
+
 10 location          Rome
+
 11 location        London
+
 12 location        London
+
 13 location       England
+
 14 location       Windsor
+
 15 location        London
+
 16 location         China
+
 17 location Mediterranean
+
 18 location       Windsor
+
 19 location        Castle
 
 ### Combinations of words
@@ -304,6 +404,8 @@ We can tell a lot about an author's writing not just from what *words* show up, 
 #### Two words: bigrams
 
 These were generated by removing boring words ("and", "to", etc., as mentioned above), so that we can look at them and only see the interesting ones!
+
+These are very revealing.
 
 ##### EAP
 ![EAP bigram wordcloud](./figs/EAP_bigram_wordcloud.png)
@@ -320,38 +422,66 @@ Now, we'll look at trigrams. We'll generate these *without* removing boring word
 
 ##### EAP
 1	one of the	36	5.416303e-04	
+
 2	as well as	23	3.460416e-04	
+
 3	that of the	19	2.858604e-04	
+
 4	would have been	18	2.708152e-04	
+
 5	of the most	17	2.557699e-04	
+
 6	might have been	15	2.256793e-04	
+
 7	I could not	14	2.106340e-04	
+
 8	portion of the	14	2.106340e-04	
+
 9	that is to	14	2.106340e-04	
+
 10	which I had	14	2.106340e-04	
+
 
 ##### HPL
 1	. . .	77	5.300694e-04	
+
 2	out of the	48	3.304329e-04	
+
 3	one of the	45	3.097808e-04	
+
 4	I could not	41	2.822447e-04	
+
 5	I did not	37	2.547087e-04	
+
 6	that he was	31	2.134046e-04	
+
 7	a kind of	28	1.927525e-04	
+
 8	and in the	28	1.927525e-04	
+
 9	seemed to be	26	1.789845e-04	
+
 10	I saw that	26	1.789845e-04	
 
 ##### MWS
 1	I did not	38	2.688153e-04	
+
 2	I could not	35	2.475930e-04	
+
 3	which I had	35	2.475930e-04	
+
 4	I do not	28	1.980744e-04	
+
 5	that I was	27	1.910003e-04	
+
 6	that I had	27	1.910003e-04	
+
 7	that I might	26	1.839263e-04	
+
 8	that it was	24	1.697781e-04	
+
 9	a part of	24	1.697781e-04	
+
 10	that he was	23	1.627040e-04	
 
 It's interesting to look at both how similar and different these are. Funny to see how Lovecraft is prone to using ellipses!
@@ -379,26 +509,41 @@ Let's look at a few randomly chosen sentences and what words from each are posit
 
 ###### EAP
             negative  positive
+            
 1:                        free
+
 2:              alas          
+
 3: confusion,despair   lighten
+
 4:                   gentleman
+
 5:         surrender       
 
 ###### HPL
    negative                                     positive
+   
 1: needless wonderful,ingenious,useful,useful,like,like,
+
 2:      ill                                             
+
 3:                                      properly,natural
+
 4:                                                      
+
 5:                                                      
 
 ###### MWS
                                 negative               positive
+                                
 1:                                  slow   restored,wonderfully
+
 2:        epidemic,force,pernicious,harm                       
+
 3:                                       adorned,aid,art,favour
+
 4: wretched,die,fear,famine,struck,wild,                        (yeah, that seems right!)
+
 5:                                                                
 
 ##### Most extreme sentences
@@ -423,6 +568,8 @@ Negative:
 
 ##### Overall distributions
 What's each author's overall tendency toward positive or negative sentences?
+
+When we compare, we see that, by a lot, Shelley has the greatest emotion range of the three.
 ###### EAP
 ![EAP sentiment distribution](./figs/g_EAP_sentiment_dist.png)
 
@@ -439,6 +586,8 @@ Who tends to be more formal? According to an analysis, samples from Poe tend to 
 #### Readability
 
 Who tends to be the most readable, or least? The following calculations use the [classic Flesch-Kinciad measure](https://en.wikipedia.org/wiki/Flesch?Kincaid_readability_tests) to compute readability scores.
+
+According to these plots, Poe's writing style is the most difficult, because a lower readability score means it's harder to read.
 
 ##### EAP
 ![EAP readability distribution](./figs/g_EAP_read.png)
@@ -533,6 +682,9 @@ long
 house
 
 ##### Most representative sentences for each topic
+
+(I'd like to add more commentary, but ran out of time before class.)
+
 1.
 > Oh no I will become wise I will study my own heart and there discovering as I may the spring of the virtues I possess I will teach others how to look for them in their own souls I will find whence arrises this unquenshable love of beauty I possess that seems the ruling star of my life I will learn how I may direct it aright and by what loving I may become more like that beauty which I adore And when I have traced the steps of the godlike feeling which ennobles me makes me that which I esteem myself to be then I will teach others if I gain but one proselyte if I can teach but one other mind what is the beauty which they ought to love and what is the sympathy to which they ought to aspire what is the true end of their being which must be the true end of that of all men then shall I be satisfied think I have done enough Farewell doubts painful meditation of evil the great, ever inexplicable cause of all that we see I am content to be ignorant of all this happy that not resting my mind on any unstable theories I have come to the conclusion that of the great secret of the universe I can know nothing There is a veil before it my eyes are not piercing enough to see through it my arms not long enough to reach it to withdraw it I will study the end of my being oh thou universal love inspire me oh thou beauty which I see glowing around me lift me to a fit understanding of thee Such was the conclusion of my long wanderings I sought the end of my being I found it to be knowledge of itself Nor think this a confined study Not only did it lead me to search the mazes of the human soul but I found that there existed nought on earth which contained not a part of that universal beauty with which it was my aim object to become acquainted the motions of the stars of heaven the study of all that philosophers have unfolded of wondrous in nature became as it where sic the steps by which my soul rose to the full contemplation enjoyment of the beautiful Oh ye who have just escaped from the world ye know not what fountains of love will be opened in your hearts or what exquisite delight your minds will receive when the secrets of the world will be unfolded to you and ye shall become acquainted with the beauty of the universe Your souls now growing eager for the acquirement of knowledge will then rest in its possession disengaged from every particle of evil and knowing all things ye will as it were be mingled in the universe ye will become a part of that celestial beauty that you admire Diotima ceased and a profound silence ensued the youth with his cheeks flushed and his eyes burning with the fire communicated from hers still fixed them on her face which was lifted to heaven as in inspiration The lovely female bent hers to the ground after a deep sigh was the first to break the silence Oh divinest prophetess, said she how new to me how strange are your lessons If such be the end of our being how wayward a course did I pursue on earth Diotima you know not how torn affections misery incalculable misery withers up the soul.
 
@@ -564,7 +716,8 @@ house
 > Cxxl, nxw cxxl Dx be cxxl, yxu fxxl Nxne xf yxur crxwing, xld cxck Dxn't frxwn sx dxn't Dxn't hxllx, nxr hxwl, nxr grxwl, nxr bxw wxw wxw Gxxd Lxrd, Jxhn, hxw yxu dx lxxk Txld yxu sx, yxu knxw, but stxp rxlling yxur gxxse xf an xld pxll abxut sx, and gx and drxwn yxur sxrrxws in a bxwl' The uproar occasioned by this mystical and cabalistical article, is not to be conceived.
 
 #### Algorithm 2
-This time, we use CTM, and show the same results.
+
+This time, we use CTM, and show the same results. Didn't have time for the algorithm to finish running by class, sorry!
 
 ##### Terms associated with generated topics
 
