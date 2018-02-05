@@ -3,10 +3,10 @@ title: "Spooky Data Analysis"
 author: "Daniel Joseph Parker"
 date: "Thursday, February 1st, 2018"
 output:
+  pdf_document: default
   html_document:
     toc: true
     toc_float: true
-  pdf_document: default
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -1812,7 +1812,8 @@ To my eye, the most revealing of these topic descriptions is "V3", whose corresp
 
 ## CTM
 
-We'll create topic models for each author using the Correlated Topic Models algorithm, and see how they might be different or similar to those generated from LDA>
+We'll create topic models for the Spooky Dataset using the Correlated Topic Models algorithm, and see how they might be different or similar to those generated from LDA.
+
 ```{r}
 spooky_CTM_Out <- CTM(spooky_DTM, topic_num)
 ```
@@ -1902,10 +1903,8 @@ Thank you for reading!
 * Named entity recognition in French. As we discussed in tutorial, Poe tends to use a bunch of French words, including French names. Would our name and place recognizers turn up more thorough lists if we were also looking through French language models? Probably!
 
 * Punctuation as proxy for sentence complexity. The annotation we produced can be used to collect information about number of particular punctuation marks, which we could use a proxy for how many clauses a sentence has or, more generally, how complex an author's sentences tend to be.
-
-** I was having tremendous trouble using the `Annotation` objects to recover the text information they refer to. Maybe there is part of the `openNLP` documentation that I missed that explains, for example, an easy way to get the `word` a particular `Annotation` refers to, but I had to use some vulgar string indexing to find them. 
-
-** Also, I was not sure how to access the information in the `features` column of each `Annotation` object easily. Maybe this is because I need to become better at subsetting in `R`.
+  + I was having tremendous trouble using the `Annotation` objects to recover the text information they refer to. Maybe there is part of the `openNLP` documentation that I missed that explains, for example, an easy way to get the `word` a particular `Annotation` refers to, but I had to use some vulgar string indexing to find them.
+  + Also, I was not sure how to access the information in the `features` column of each `Annotation` object easily. Maybe this is because I need to become better at subsetting in `R`.
 
 * Types of sentences (such as question, imperative, etc.). I imagine it's likely there is an NLP functionality available within one of the packages I've used to predict sentence type, and this could be very revealing about author's styles. For example, do they tend to write dialog in different proportion? I didn't luck out on finding this functionality.
 
