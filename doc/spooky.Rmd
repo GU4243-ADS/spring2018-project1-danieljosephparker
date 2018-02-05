@@ -605,7 +605,7 @@ wordcloud(MWS_words_ranked$.,
           colors = MWS_seq_colors)
 ```
 
-```{r Create wordcloud PDFs, message=FALSE}
+```{r Create wordcloud PDFs & PNGs, message=FALSE}
 pdf("../figs/EAP_common_wordcloud.pdf")
 wordcloud(EAP_words_ranked$.,
           EAP_words_ranked$Freq,
@@ -613,6 +613,15 @@ wordcloud(EAP_words_ranked$.,
           max.words = num_words,
           colors = EAP_seq_colors)
 dev.off()
+
+png("../figs/EAP_common_wordcloud.png")
+wordcloud(EAP_words_ranked$.,
+          EAP_words_ranked$Freq,
+          scale = small_scale,
+          max.words = num_words,
+          colors = EAP_seq_colors)
+dev.off()
+
 
 pdf("../figs/HPL_common_wordcloud.pdf")
 wordcloud(HPL_words_ranked$.,
@@ -622,7 +631,23 @@ wordcloud(HPL_words_ranked$.,
           colors = HPL_seq_colors)
 dev.off()
 
+png("../figs/HPL_common_wordcloud.png")
+wordcloud(HPL_words_ranked$.,
+          HPL_words_ranked$Freq,
+          scale = small_scale,
+          max.words = num_words,
+          colors = HPL_seq_colors)
+dev.off()
+
 pdf("../figs/MWS_common_wordcloud.pdf")
+wordcloud(MWS_words_ranked$.,
+          MWS_words_ranked$Freq,
+          scale = small_scale,
+          max.words = num_words,
+          colors = MWS_seq_colors)
+dev.off()
+
+png("../figs/MWS_common_wordcloud.png")
 wordcloud(MWS_words_ranked$.,
           MWS_words_ranked$Freq,
           scale = small_scale,
@@ -663,18 +688,27 @@ wordcloud(mid_MWS$., mid_MWS$Freq, scale = constant_scale,
 
 ```{r Create more wordcloud PDFs, message=FALSE}
 pdf("../figs/EAP_mid_wordcloud.pdf")
-wordcloud(mid_EAP$., mid_EAP$Freq, scale = constant_scale,
-          max.words = num_words, colors = EAP_seq_colors)
+wordcloud(mid_EAP$., mid_EAP$Freq, scale = constant_scale, max.words = num_words, colors = EAP_seq_colors)
+dev.off()
+
+png("../figs/EAP_mid_wordcloud.png")
+wordcloud(mid_EAP$., mid_EAP$Freq, scale = constant_scale, max.words = num_words, colors = EAP_seq_colors)
 dev.off()
 
 pdf("../figs/HPL_mid_wordcloud.pdf")
-wordcloud(mid_HPL$., mid_HPL$Freq, scale = constant_scale,
-          max.words = num_words, colors = HPL_seq_colors)
+wordcloud(mid_HPL$., mid_HPL$Freq, scale = constant_scale, max.words = num_words, colors = HPL_seq_colors)
+dev.off()
+
+png("../figs/HPL_mid_wordcloud.png")
+wordcloud(mid_HPL$., mid_HPL$Freq, scale = constant_scale, max.words = num_words, colors = HPL_seq_colors)
 dev.off()
 
 pdf("../figs/MWS_mid_wordcloud.pdf")
-wordcloud(mid_MWS$., mid_MWS$Freq, scale = constant_scale,
-          max.words = num_words, colors = MWS_seq_colors)
+wordcloud(mid_MWS$., mid_MWS$Freq, scale = constant_scale, max.words = num_words, colors = MWS_seq_colors)
+dev.off()
+
+png("../figs/MWS_mid_wordcloud.png")
+wordcloud(mid_MWS$., mid_MWS$Freq, scale = constant_scale, max.words = num_words, colors = MWS_seq_colors)
 dev.off()
 ```
 
@@ -724,18 +758,27 @@ wordcloud(low_MWS$., low_MWS$Freq, scale = constant_scale,
 
 ```{r Generate more wordcloud PDFs, message=FALSE}
 pdf("../figs/EAP_low_wordcloud.pdf")
-wordcloud(low_EAP$., low_EAP$Freq, scale = constant_scale,
-          max.words = num_words, colors = EAP_seq_colors)
+wordcloud(low_EAP$., low_EAP$Freq, scale = constant_scale, max.words = num_words, colors = EAP_seq_colors)
+dev.off()
+
+png("../figs/EAP_low_wordcloud.png")
+wordcloud(low_EAP$., low_EAP$Freq, scale = constant_scale, max.words = num_words, colors = EAP_seq_colors)
 dev.off()
 
 pdf("../figs/HPL_low_wordcloud.pdf")
-wordcloud(low_HPL$., low_HPL$Freq, scale = constant_scale,
-          max.words = num_words, colors = HPL_seq_colors)
+wordcloud(low_HPL$., low_HPL$Freq, scale = constant_scale, max.words = num_words, colors = HPL_seq_colors)
+dev.off()
+
+png("../figs/HPL_low_wordcloud.png")
+wordcloud(low_HPL$., low_HPL$Freq, scale = constant_scale, max.words = num_words, colors = HPL_seq_colors)
 dev.off()
 
 pdf("../figs/MWS_low_wordcloud.pdf")
-wordcloud(low_MWS$., low_MWS$Freq, scale = constant_scale,
-          max.words = num_words, colors = MWS_seq_colors)
+wordcloud(low_MWS$., low_MWS$Freq, scale = constant_scale, max.words = num_words, colors = MWS_seq_colors)
+dev.off()
+
+png("../figs/MWS_low_wordcloud.png")
+wordcloud(low_MWS$., low_MWS$Freq, scale = constant_scale, max.words = num_words, colors = MWS_seq_colors)
 dev.off()
 ```
 
@@ -787,8 +830,8 @@ g_total_gen_pron <- ggplot(total_gender_pron, aes(x = "", y = percent, fill = wo
 g_total_gen_pron
 ```
 
-```{r Write piechart PDF, message=FALSE}
-pdf("../figs/g_total_gen_pron.pdf")
+```{r Write piechart PNG, message=FALSE}
+png("../figs/g_total_gen_pron.png")
 g_total_gen_pron
 dev.off()
 ```
@@ -871,9 +914,9 @@ g_MWS_gen_pron
 ```
 
 ```{r Save author pie charts, message=FALSE}
-ggsave("../figs/g_EAP_gen_pron.pdf", g_EAP_gen_pron, device = "pdf")
-ggsave("../figs/g_HPL_gen_pron.pdf", g_HPL_gen_pron, device = "pdf")
-ggsave("../figs/g_MWS_gen_pron.pdf", g_MWS_gen_pron, device = "pdf")
+ggsave("../figs/g_EAP_gen_pron.png", g_EAP_gen_pron, device = "png")
+ggsave("../figs/g_HPL_gen_pron.png", g_HPL_gen_pron, device = "png")
+ggsave("../figs/g_MWS_gen_pron.png", g_MWS_gen_pron, device = "png")
 ```
 
 We can see that the word "hers" does not even occur once in Lovecraft's contributions to this dataset. As we might expect, Shelley has the most mentions of female gender pronouns, at about the twice the frequency of Poe.
@@ -1155,11 +1198,23 @@ pdf("../figs/EAP_bigram_wordcloud.pdf")
 wordcloud(EAP_bigrams$bigram, EAP_bigrams$n, max.words=50, colors=EAP_seq_colors)
 dev.off()
 
+png("../figs/EAP_bigram_wordcloud.png")
+wordcloud(EAP_bigrams$bigram, EAP_bigrams$n, max.words=50, colors=EAP_seq_colors)
+dev.off()
+
 pdf("../figs/HPL_bigram_wordcloud.pdf")
 wordcloud(HPL_bigrams$bigram, HPL_bigrams$n, max.words=50, colors=HPL_seq_colors)
 dev.off()
 
+png("../figs/HPL_bigram_wordcloud.png")
+wordcloud(HPL_bigrams$bigram, HPL_bigrams$n, max.words=50, colors=HPL_seq_colors)
+dev.off()
+
 pdf("../figs/MWS_bigram_wordcloud.pdf")
+wordcloud(MWS_bigrams$bigram, MWS_bigrams$n, max.words=50, colors=MWS_seq_colors)
+dev.off()
+
+png("../figs/MWS_bigram_wordcloud.png")
 wordcloud(MWS_bigrams$bigram, MWS_bigrams$n, max.words=50, colors=MWS_seq_colors)
 dev.off()
 ```
@@ -1670,6 +1725,8 @@ spooky_LDA_Out <- LDA(spooky_DTM, topic_num,
 # the topics generated are more descriptive.
 
 # This takes a long time.
+
+# I have never run this code, because I didn't do a by-author topic model.
 
 EAP_LDA_Out <- LDA(EAP_DTM, topic_num, 
                       method = "Gibbs", 
