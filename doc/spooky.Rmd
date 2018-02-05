@@ -1095,7 +1095,7 @@ We'll use `tidytext` to generate bigrams.
 # First, unnest all sentences by EAP as bigrams.
 # This creates an overlapping series.
 EAP_bigrams <-
-  EAP$text %>%
+  EAP[2] %>%
   as.tbl() %>%
   unnest_tokens(bigram, text, token="ngrams", n=2)
 
@@ -1120,7 +1120,7 @@ EAP_bigrams_no_stop <-
 # We'll do the same thing for Lovecraft and Shelley, but with condensed notation.
 
 HPL_bigrams_no_stop <-
-  HPL$text %>%
+  HPL[2] %>%
   as.tbl() %>%
   unnest_tokens(bigram, text, token="ngrams", n=2) %>%
   separate(bigram, c("word1", "word2"), sep=" ") %>%
@@ -1129,7 +1129,7 @@ HPL_bigrams_no_stop <-
   unite(bigram, word1, word2, sep = " ")
 
 MWS_bigrams_no_stop <-
-  MWS$text %>%
+  MWS[2] %>%
   as.tbl() %>%
   unnest_tokens(bigram, text, token="ngrams", n=2) %>%
   separate(bigram, c("word1", "word2"), sep=" ") %>%
@@ -1364,31 +1364,27 @@ Personally, I find these visualizations to be a fascinating result: according to
 max_EAP_sentiment <- max(EAP_sentiments$sentiment)
 max_HPL_sentiment <- max(HPL_sentiments$sentiment)
 max_MWS_sentiment <- max(MWS_sentiments$sentiment)
-
-max_EAP_sentence <- EAP$text[max_EAP_id]
-max_HPL_sentence <- HPL$text[max_HPL_id]
-max_MWS_sentence <- MWS$text[max_MWS_id]
-
-max_EAP_id <- as.integer(filter(EAP_sentiments, EAP_sentiments$sentiment == max_EAP_sentiment)[1])
-max_HPL_id <- as.integer(filter(HPL_sentiments, HPL_sentiments$sentiment == max_HPL_sentiment)[1])
-max_MWS_id <- as.integer(filter(MWS_sentiments, MWS_sentiments$sentiment == max_MWS_sentiment)[1])
-
 min_EAP_sentiment <- min(EAP_sentiments$sentiment)
 min_HPL_sentiment <- min(HPL_sentiments$sentiment)
 min_MWS_sentiment <- min(MWS_sentiments$sentiment)
 
-min_EAP_sentence <- EAP$text[min_EAP_id]
-min_HPL_sentence <- HPL$text[min_HPL_id]
-min_MWS_sentence <- MWS$text[min_MWS_id]
-
+max_EAP_id <- as.integer(filter(EAP_sentiments, EAP_sentiments$sentiment == max_EAP_sentiment)[1])
+max_HPL_id <- as.integer(filter(HPL_sentiments, HPL_sentiments$sentiment == max_HPL_sentiment)[1])
+max_MWS_id <- as.integer(filter(MWS_sentiments, MWS_sentiments$sentiment == max_MWS_sentiment)[1])
 min_EAP_id <- as.integer(filter(EAP_sentiments, EAP_sentiments$sentiment == min_EAP_sentiment)[1])
 min_HPL_id <- as.integer(filter(HPL_sentiments, HPL_sentiments$sentiment == min_HPL_sentiment)[1])
 min_MWS_id <- as.integer(filter(MWS_sentiments, MWS_sentiments$sentiment == min_MWS_sentiment)[1])
 
+max_EAP_sentence <- EAP$text[max_EAP_id]
+max_HPL_sentence <- HPL$text[max_HPL_id]
+max_MWS_sentence <- MWS$text[max_MWS_id]
+min_EAP_sentence <- EAP$text[min_EAP_id]
+min_HPL_sentence <- HPL$text[min_HPL_id]
+min_MWS_sentence <- MWS$text[min_MWS_id]
+
 max_EAP_sentence
 max_HPL_sentence
 max_MWS_sentence
-
 min_EAP_sentence
 min_HPL_sentence
 min_MWS_sentence

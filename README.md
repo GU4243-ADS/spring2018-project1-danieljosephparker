@@ -95,35 +95,35 @@ To help make our data visualizations more intuitive, we'll give each author a co
 ![The (misunderstood!) Monster](./figs/frankenstein.jpg)
 
 #### How many sentences do we have from each author?
-![Total sentences by author](.figs/g_total_sentences.png)
+![Total sentences by author](./figs/g_total_sentences.png)
 
 #### How long do everyone's sentences tend to be?
 ##### Seen as histograms
-![EAP sentence length distribution](.figs/g_EAP_sent_char_dist.png)
-![HPL sentence length distribution](.figs/g_HPL_sent_char_dist.png)
-![MWS sentence length distribution](.figs/g_MWS_sent_char_dist.png)
+![EAP sentence length distribution](./figs/g_EAP_sent_char_dist.png)
+![HPL sentence length distribution](./figs/g_HPL_sent_char_dist.png)
+![MWS sentence length distribution](./figs/g_MWS_sent_char_dist.png)
 
 ##### Seen as boxplots
-![Compared sentence lengths](.figs/g_sent_char_box.png)
+![Compared sentence lengths](./figs/g_sent_char_box.png)
 
 #### What are the longest and shortest sentences from each?
 ##### EAP
 ###### Longest
-"Burning with the chivalry of this determination, the great Touch and go, in the next 'Tea Pot,' came out merely with this simple but resolute paragraph, in reference to this unhappy affair: 'The editor of the \"Tea Pot\" has the honor of advising the editor of the \"Gazette\" that he the \"Tea Pot\" will take an opportunity in tomorrow morning's paper, of convincing him the \"Gazette\" that he the \"Tea Pot\" both can and will be his own master, as regards style; he the \"Tea Pot\" intending to show him the \"Gazette\" the supreme, and indeed the withering contempt with which the criticism of him the \"Gazette\" inspires the independent bosom of him the \"TeaPot\" by composing for the especial gratification ? of him the \"Gazette\" a leading article, of some extent, in which the beautiful vowel the emblem of Eternity yet so offensive to the hyper exquisite delicacy of him the \"Gazette\" shall most certainly not be avoided by his the \"Gazette's\" most obedient, humble servant, the \"Tea Pot.\" \"So much for Buckingham\"' In fulfilment of the awful threat thus darkly intimated rather than decidedly enunciated, the great Bullet head, turning a deaf ear to all entreaties for 'copy,' and simply requesting his foreman to 'go to the d l,' when he the foreman assured him the 'Tea Pot' that it was high time to 'go to press': turning a deaf ear to everything, I say, the great Bullet head sat up until day break, consuming the midnight oil, and absorbed in the composition of the really unparalleled paragraph, which follows: 'So ho, John how now?"
+> "Burning with the chivalry of this determination, the great Touch and go, in the next 'Tea Pot,' came out merely with this simple but resolute paragraph, in reference to this unhappy affair: 'The editor of the \"Tea Pot\" has the honor of advising the editor of the \"Gazette\" that he the \"Tea Pot\" will take an opportunity in tomorrow morning's paper, of convincing him the \"Gazette\" that he the \"Tea Pot\" both can and will be his own master, as regards style; he the \"Tea Pot\" intending to show him the \"Gazette\" the supreme, and indeed the withering contempt with which the criticism of him the \"Gazette\" inspires the independent bosom of him the \"TeaPot\" by composing for the especial gratification ? of him the \"Gazette\" a leading article, of some extent, in which the beautiful vowel the emblem of Eternity yet so offensive to the hyper exquisite delicacy of him the \"Gazette\" shall most certainly not be avoided by his the \"Gazette's\" most obedient, humble servant, the \"Tea Pot.\" \"So much for Buckingham\"' In fulfilment of the awful threat thus darkly intimated rather than decidedly enunciated, the great Bullet head, turning a deaf ear to all entreaties for 'copy,' and simply requesting his foreman to 'go to the d l,' when he the foreman assured him the 'Tea Pot' that it was high time to 'go to press': turning a deaf ear to everything, I say, the great Bullet head sat up until day break, consuming the midnight oil, and absorbed in the composition of the really unparalleled paragraph, which follows: 'So ho, John how now?"
 ###### Shortest
-"Many were quite awry."
+> "Many were quite awry."
 
 ##### HPL
 ###### Longest
-"A weak, filtered glow from the rain harassed street lamps outside, and a feeble phosphorescence from the detestable fungi within, shewed the dripping stone of the walls, from which all traces of whitewash had vanished; the dank, foetid, and mildew tainted hard earth floor with its obscene fungi; the rotting remains of what had been stools, chairs, and tables, and other more shapeless furniture; the heavy planks and massive beams of the ground floor overhead; the decrepit plank door leading to bins and chambers beneath other parts of the house; the crumbling stone staircase with ruined wooden hand rail; and the crude and cavernous fireplace of blackened brick where rusted iron fragments revealed the past presence of hooks, andirons, spit, crane, and a door to the Dutch oven these things, and our austere cot and camp chairs, and the heavy and intricate destructive machinery we had brought."
+> "A weak, filtered glow from the rain harassed street lamps outside, and a feeble phosphorescence from the detestable fungi within, shewed the dripping stone of the walls, from which all traces of whitewash had vanished; the dank, foetid, and mildew tainted hard earth floor with its obscene fungi; the rotting remains of what had been stools, chairs, and tables, and other more shapeless furniture; the heavy planks and massive beams of the ground floor overhead; the decrepit plank door leading to bins and chambers beneath other parts of the house; the crumbling stone staircase with ruined wooden hand rail; and the crude and cavernous fireplace of blackened brick where rusted iron fragments revealed the past presence of hooks, andirons, spit, crane, and a door to the Dutch oven these things, and our austere cot and camp chairs, and the heavy and intricate destructive machinery we had brought."
 ###### Shortest
-"But it was so silent."
+> "But it was so silent."
 
 ##### MWS
 ###### Longest
-"Diotima approached the fountain seated herself on a mossy mound near it and her disciples placed themselves on the grass near her Without noticing me who sat close under her she continued her discourse addressing as it happened one or other of her listeners but before I attempt to repeat her words I will describe the chief of these whom she appeared to wish principally to impress One was a woman of about years of age in the full enjoyment of the most exquisite beauty her golden hair floated in ringlets on her shoulders her hazle eyes were shaded by heavy lids and her mouth the lips apart seemed to breathe sensibility But she appeared thoughtful unhappy her cheek was pale she seemed as if accustomed to suffer and as if the lessons she now heard were the only words of wisdom to which she had ever listened The youth beside her had a far different aspect his form was emaciated nearly to a shadow his features were handsome but thin worn his eyes glistened as if animating the visage of decay his forehead was expansive but there was a doubt perplexity in his looks that seemed to say that although he had sought wisdom he had got entangled in some mysterious mazes from which he in vain endeavoured to extricate himself As Diotima spoke his colour went came with quick changes the flexible muscles of his countenance shewed every impression that his mind received he seemed one who in life had studied hard but whose feeble frame sunk beneath the weight of the mere exertion of life the spark of intelligence burned with uncommon strength within him but that of life seemed ever on the eve of fading At present I shall not describe any other of this groupe but with deep attention try to recall in my memory some of the words of Diotima they were words of fire but their path is faintly marked on my recollection It requires a just hand, said she continuing her discourse, to weigh divide the good from evil On the earth they are inextricably entangled and if you would cast away what there appears an evil a multitude of beneficial causes or effects cling to it mock your labour When I was on earth and have walked in a solitary country during the silence of night have beheld the multitude of stars, the soft radiance of the moon reflected on the sea, which was studded by lovely islands When I have felt the soft breeze steal across my cheek as the words of love it has soothed cherished me then my mind seemed almost to quit the body that confined it to the earth with a quick mental sense to mingle with the scene that I hardly saw I felt Then I have exclaimed, oh world how beautiful thou art Oh brightest universe behold thy worshiper spirit of beauty of sympathy which pervades all things, now lifts my soul as with wings, how have you animated the light the breezes Deep inexplicable spirit give me words to express my adoration; my mind is hurried away but with language I cannot tell how I feel thy loveliness Silence or the song of the nightingale the momentary apparition of some bird that flies quietly past all seems animated with thee more than all the deep sky studded with worlds\" If the winds roared tore the sea and the dreadful lightnings seemed falling around me still love was mingled with the sacred terror I felt; the majesty of loveliness was deeply impressed on me So also I have felt when I have seen a lovely countenance or heard solemn music or the eloquence of divine wisdom flowing from the lips of one of its worshippers a lovely animal or even the graceful undulations of trees inanimate objects have excited in me the same deep feeling of love beauty; a feeling which while it made me alive eager to seek the cause animator of the scene, yet satisfied me by its very depth as if I had already found the solution to my enquires sic as if in feeling myself a part of the great whole I had found the truth secret of the universe But when retired in my cell I have studied contemplated the various motions and actions in the world the weight of evil has confounded me If I thought of the creation I saw an eternal chain of evil linked one to the other from the great whale who in the sea swallows destroys multitudes the smaller fish that live on him also torment him to madness to the cat whose pleasure it is to torment her prey I saw the whole creation filled with pain each creature seems to exist through the misery of another death havoc is the watchword of the animated world And Man also even in Athens the most civilized spot on the earth what a multitude of mean passions envy, malice a restless desire to depreciate all that was great and good did I see And in the dominions of the great being I saw man reduced?"
+> "Diotima approached the fountain seated herself on a mossy mound near it and her disciples placed themselves on the grass near her Without noticing me who sat close under her she continued her discourse addressing as it happened one or other of her listeners but before I attempt to repeat her words I will describe the chief of these whom she appeared to wish principally to impress One was a woman of about years of age in the full enjoyment of the most exquisite beauty her golden hair floated in ringlets on her shoulders her hazle eyes were shaded by heavy lids and her mouth the lips apart seemed to breathe sensibility But she appeared thoughtful unhappy her cheek was pale she seemed as if accustomed to suffer and as if the lessons she now heard were the only words of wisdom to which she had ever listened The youth beside her had a far different aspect his form was emaciated nearly to a shadow his features were handsome but thin worn his eyes glistened as if animating the visage of decay his forehead was expansive but there was a doubt perplexity in his looks that seemed to say that although he had sought wisdom he had got entangled in some mysterious mazes from which he in vain endeavoured to extricate himself As Diotima spoke his colour went came with quick changes the flexible muscles of his countenance shewed every impression that his mind received he seemed one who in life had studied hard but whose feeble frame sunk beneath the weight of the mere exertion of life the spark of intelligence burned with uncommon strength within him but that of life seemed ever on the eve of fading At present I shall not describe any other of this groupe but with deep attention try to recall in my memory some of the words of Diotima they were words of fire but their path is faintly marked on my recollection It requires a just hand, said she continuing her discourse, to weigh divide the good from evil On the earth they are inextricably entangled and if you would cast away what there appears an evil a multitude of beneficial causes or effects cling to it mock your labour When I was on earth and have walked in a solitary country during the silence of night have beheld the multitude of stars, the soft radiance of the moon reflected on the sea, which was studded by lovely islands When I have felt the soft breeze steal across my cheek as the words of love it has soothed cherished me then my mind seemed almost to quit the body that confined it to the earth with a quick mental sense to mingle with the scene that I hardly saw I felt Then I have exclaimed, oh world how beautiful thou art Oh brightest universe behold thy worshiper spirit of beauty of sympathy which pervades all things, now lifts my soul as with wings, how have you animated the light the breezes Deep inexplicable spirit give me words to express my adoration; my mind is hurried away but with language I cannot tell how I feel thy loveliness Silence or the song of the nightingale the momentary apparition of some bird that flies quietly past all seems animated with thee more than all the deep sky studded with worlds\" If the winds roared tore the sea and the dreadful lightnings seemed falling around me still love was mingled with the sacred terror I felt; the majesty of loveliness was deeply impressed on me So also I have felt when I have seen a lovely countenance or heard solemn music or the eloquence of divine wisdom flowing from the lips of one of its worshippers a lovely animal or even the graceful undulations of trees inanimate objects have excited in me the same deep feeling of love beauty; a feeling which while it made me alive eager to seek the cause animator of the scene, yet satisfied me by its very depth as if I had already found the solution to my enquires sic as if in feeling myself a part of the great whole I had found the truth secret of the universe But when retired in my cell I have studied contemplated the various motions and actions in the world the weight of evil has confounded me If I thought of the creation I saw an eternal chain of evil linked one to the other from the great whale who in the sea swallows destroys multitudes the smaller fish that live on him also torment him to madness to the cat whose pleasure it is to torment her prey I saw the whole creation filled with pain each creature seems to exist through the misery of another death havoc is the watchword of the animated world And Man also even in Athens the most civilized spot on the earth what a multitude of mean passions envy, malice a restless desire to depreciate all that was great and good did I see And in the dominions of the great being I saw man reduced?"
 ###### Shortest
-"Was my love blamable?"
+> "Was my love blamable?"
 
 ### Text mining
 
@@ -173,13 +173,13 @@ What are the longest words from each?
 
 How long do everyone's words tend to be?
 ##### EAP
-![EAP word length distribution](.figs/g_EAP_word_length.png)
+![EAP word length distribution](./figs/g_EAP_word_length.png)
 
 ##### HPL
-![HPL word length distribution](.figs/g_HPL_word_length.png)
+![HPL word length distribution](./figs/g_HPL_word_length.png)
 
 ##### MWS
-![MWS word length distribution](.figs/g_MWS_word_length.png)
+![MWS word length distribution](./figs/g_MWS_word_length.png)
 
 #### Diversity in vocabulary
 
@@ -190,34 +190,34 @@ How much do they tend to repeat or not repeat words - how "spread out" is their 
 
 What words are used really often?
 ##### EAP
-![EAP common words](.figs/EAP_common_wordcloud.pdf)
+![EAP common words](./figs/EAP_common_wordcloud.pdf)
 
 ##### HPL
-![HPL common words](.figs/HPL_common_wordcloud.pdf)
+![HPL common words](./figs/HPL_common_wordcloud.pdf)
 
 ##### MWS
-![MWS common words](.figs/MWS_common_wordcloud.pdf)
+![MWS common words](./figs/MWS_common_wordcloud.pdf)
 
 What are some words used less often?
 ##### EAP
-![EAP medium-frequency words](.figs/EAP_mid_wordcloud.pdf)
+![EAP medium-frequency words](./figs/EAP_mid_wordcloud.pdf)
 
 ##### HPL
-![HPL medium-frequency words](.figs/HPL_mid_wordcloud.pdf)
+![HPL medium-frequency words](./figs/HPL_mid_wordcloud.pdf)
 
 ##### MWS
-![MWS medium-frequency words](.figs/MWS_mid_wordcloud.pdf)
+![MWS medium-frequency words](./figs/MWS_mid_wordcloud.pdf)
 
 
 What are some words used almost never?
 ##### EAP
-![EAP low-frequency words](.figs/EAP_low_wordcloud.pdf)
+![EAP low-frequency words](./figs/EAP_low_wordcloud.pdf)
 
 ##### HPL
-![HPL low-frequency words](.figs/HPL_low_wordcloud.pdf)
+![HPL low-frequency words](./figs/HPL_low_wordcloud.pdf)
 
 ##### MWS
-![MWS low-frequency words](.figs/MWS_low_wordcloud.pdf)
+![MWS low-frequency words](./figs/MWS_low_wordcloud.pdf)
 
 #### Gender imparity
 
@@ -227,13 +227,13 @@ How often do the authors use gender pronouns for women and men, overall? (a crud
 And individually?
 
 ##### EAP
-![EAP gender pronouns](.figs/g_EAP_gen_pron.pdf)
+![EAP gender pronouns](./figs/g_EAP_gen_pron.pdf)
 
 ##### HPL
-![HPL gender pronouns](.figs/g_HPL_gen_pron.pdf)
+![HPL gender pronouns](./figs/g_HPL_gen_pron.pdf)
 
 ##### MWS
-![MWS gender pronouns](.figs/g_MWS_gen_pron.pdf)
+![MWS gender pronouns](./figs/g_MWS_gen_pron.pdf)
 
 ### Sentence annotation and named entities
 
@@ -304,13 +304,13 @@ We can tell a lot about an author's writing not just from what *words* show up, 
 These were generated by removing boring words ("and", "to", etc., as mentioned above), so that we can look at them and only see the interesting ones!
 
 ##### EAP
-![EAP bigram wordcloud](.figs/EAP_bigram_wordcloud.pdf)
+![EAP bigram wordcloud](./figs/EAP_bigram_wordcloud.pdf)
 
 ##### HPL
-![HPL bigram wordcloud](.figs/HPL_bigram_wordcloud.pdf)
+![HPL bigram wordcloud](./figs/HPL_bigram_wordcloud.pdf)
 
 ##### MWS
-![MWS bigram wordcloud](.figs/MWS_bigram_wordcloud.pdf)
+![MWS bigram wordcloud](./figs/MWS_bigram_wordcloud.pdf)
 
 #### Three or more words: n-grams
 
@@ -359,10 +359,10 @@ It's interesting to look at both how similar and different these are. Funny to s
 We're going to make up a paragraph by using the trigrams we generated! Maybe this will more or less sound like the voice of each author (we hope!)!
 
 ##### EAP
-deep, great, odd, piquant, pertinent, and pretty. must have foreseen the chagrin of St. Eustache, Marie's betrothed, was found in the words of an ancient prophecy "A lofty name shall have  frenzy of mankind? to swim from Lofoden to Moskoe, was caught by the stream and borne down, while he roared terribly, so as to look about. not, alas departed, and would not be driven away, the white and ghastly crest, howling and shrieking forever.  between them, and commences a rapid descent into a vast amphitheatre entirely begirt with purple mountains, whose bases are laved by a gleaming river throughout the full extent of triumphant execution, in  and stronger reasons for believing them so deposited, than any which reaches their ears who indulge in the more remote gaieties of the other is hidden from  possible smiles, to be seated, while he made reference to the editorial opinions of the day. great general acuteness, and discriminative understanding, who make no scruple in pronouncing the Automaton a pure machine, unconnected with human agency  . 
+> deep, great, odd, piquant, pertinent, and pretty. must have foreseen the chagrin of St. Eustache, Marie's betrothed, was found in the words of an ancient prophecy "A lofty name shall have  frenzy of mankind? to swim from Lofoden to Moskoe, was caught by the stream and borne down, while he roared terribly, so as to look about. not, alas departed, and would not be driven away, the white and ghastly crest, howling and shrieking forever.  between them, and commences a rapid descent into a vast amphitheatre entirely begirt with purple mountains, whose bases are laved by a gleaming river throughout the full extent of triumphant execution, in  and stronger reasons for believing them so deposited, than any which reaches their ears who indulge in the more remote gaieties of the other is hidden from  possible smiles, to be seated, while he made reference to the editorial opinions of the day. great general acuteness, and discriminative understanding, who make no scruple in pronouncing the Automaton a pure machine, unconnected with human agency  . 
 
 ##### HPL
-a veined, polished stone beyond his power to identify, and the tiles were cut in bizarre angled shapes which struck him as  and interment, began his task of transference one disagreeable April morning, but ceased before noon because of a heavy rain that seemed to emanate from unheard  or mental communication by means of suitable apparatus, and I had followed enthusiastically every aesthetic and intellectual movement which promised respite from our devastating ennui. be my realm,  under six feet tall, dressed in shabby blue civilian clothes and wearing a frayed grey golf cap. and made no pretence to literary style. haste just after the hour  over the rock tombs of Neb, nor any gaiety save the unnamed feasts of Nitokris beneath the Great Pyramid; yet in my new wildness and freedom I almost welcome the bitterness of alienage. the U to settle slowly down upon the rumbling hills. he larnt the secret he  . 
+> a veined, polished stone beyond his power to identify, and the tiles were cut in bizarre angled shapes which struck him as  and interment, began his task of transference one disagreeable April morning, but ceased before noon because of a heavy rain that seemed to emanate from unheard  or mental communication by means of suitable apparatus, and I had followed enthusiastically every aesthetic and intellectual movement which promised respite from our devastating ennui. be my realm,  under six feet tall, dressed in shabby blue civilian clothes and wearing a frayed grey golf cap. and made no pretence to literary style. haste just after the hour  over the rock tombs of Neb, nor any gaiety save the unnamed feasts of Nitokris beneath the Great Pyramid; yet in my new wildness and freedom I almost welcome the bitterness of alienage. the U to settle slowly down upon the rumbling hills. he larnt the secret he  . 
 
 ##### MWS
 > I hired the chaise alone? the Protector of England. forth from this scene, and yet my enjoyment was embittered both by the memory of my mother whom he so passionately adored he might weaken the present impression. among  a spark of being into the lifeless thing that lay at my feet. this operation, and the nuts and roots much improved. have chosen with dreams and theories to overthrow my schemes for your own aggrandizement; but you shall not do the same by those I have formed for  love and kindness. winter our  must now be his companion through life; and if he did not credit it." the agitation with which I am acquainted; that cannot be; listen patiently until the end of all joy to me." were one of their great society, while I must keep the  seemed to be, a savage inhabitant of some undiscovered island, but a European. more plainly how well I had succeeded.  . 
@@ -371,23 +371,86 @@ a veined, polished stone beyond his power to identify, and the tiles were cut in
 
 #### Sentiments
 
-Let's look at some positive and negative words from each.
+##### Example words
 
-Overall, do the authors tend to write positive or negative sentences?
+Let's look at a few randomly chosen sentences and what words from each are positive and negative. The blank spaces mean there wasn't any word in that category (positive or negative) in that sentence.
 
-What are the most positive and negative sentences?
+###### EAP
+            negative  positive
+1:                        free
+2:              alas          
+3: confusion,despair   lighten
+4:                   gentleman
+5:         surrender       
+
+###### HPL
+   negative                                     positive
+1: needless wonderful,ingenious,useful,useful,like,like,
+2:      ill                                             
+3:                                      properly,natural
+4:                                                      
+5:                                                      
+
+###### MWS
+                                negative               positive
+1:                                  slow   restored,wonderfully
+2:        epidemic,force,pernicious,harm                       
+3:                                       adorned,aid,art,favour
+4: wretched,die,fear,famine,struck,wild,                        (yeah, that seems right!)
+5:                                                                
+
+##### Most extreme sentences
+What are the most positive and negative sentences? From these examples, it's clear what a crude metric the sentiment calculation is: more of a heuristic than a really reflective score. Still, it's interesting to look at!
+
+###### EAP
+Positive:
+> To die laughing, must be the most glorious of all glorious deaths Sir Thomas More a very fine man was Sir Thomas More Sir Thomas More died laughing, you remember.
+Negative:
+> Yet its memory was replete with horror horror more horrible from being vague, and terror more terrible from ambiguity.
+###### HPL
+Positive:
+> I won't say that all this is wholly true in body, but 'tis sufficient true to furnish a very pretty spectacle now and then.
+Negative:
+> The odour of the fish was maddening; but I was too much concerned with graver things to mind so slight an evil, and set out boldly for an unknown goal.
+
+###### MWS
+Positive:
+> Oh no I will become wise I will study my own heart and there discovering as I may the spring of the virtues I possess I will teach others how to look for them in their own souls I will find whence arrises this unquenshable love of beauty I possess that seems the ruling star of my life I will learn how I may direct it aright and by what loving I may become more like that beauty which I adore And when I have traced the steps of the godlike feeling which ennobles me makes me that which I esteem myself to be then I will teach others if I gain but one proselyte if I can teach but one other mind what is the beauty which they ought to love and what is the sympathy to which they ought to aspire what is the true end of their being which must be the true end of that of all men then shall I be satisfied think I have done enough Farewell doubts painful meditation of evil the great, ever inexplicable cause of all that we see I am content to be ignorant of all this happy that not resting my mind on any unstable theories I have come to the conclusion that of the great secret of the universe I can know nothing There is a veil before it my eyes are not piercing enough to see through it my arms not long enough to reach it to withdraw it I will study the end of my being oh thou universal love inspire me oh thou beauty which I see glowing around me lift me to a fit understanding of thee Such was the conclusion of my long wanderings I sought the end of my being I found it to be knowledge of itself Nor think this a confined study Not only did it lead me to search the mazes of the human soul but I found that there existed nought on earth which contained not a part of that universal beauty with which it was my aim object to become acquainted the motions of the stars of heaven the study of all that philosophers have unfolded of wondrous in nature became as it where sic the steps by which my soul rose to the full contemplation enjoyment of the beautiful Oh ye who have just escaped from the world ye know not what fountains of love will be opened in your hearts or what exquisite delight your minds will receive when the secrets of the world will be unfolded to you and ye shall become acquainted with the beauty of the universe Your souls now growing eager for the acquirement of knowledge will then rest in its possession disengaged from every particle of evil and knowing all things ye will as it were be mingled in the universe ye will become a part of that celestial beauty that you admire Diotima ceased and a profound silence ensued the youth with his cheeks flushed and his eyes burning with the fire communicated from hers still fixed them on her face which was lifted to heaven as in inspiration The lovely female bent hers to the ground after a deep sigh was the first to break the silence Oh divinest prophetess, said she how new to me how strange are your lessons If such be the end of our being how wayward a course did I pursue on earth Diotima you know not how torn affections misery incalculable misery withers up the soul.
+Negative:
+> He could have endured poverty, and while this distress had been the meed of his virtue, he gloried in it; but the ingratitude of the Turk and the loss of his beloved Safie were misfortunes more bitter and irreparable.
+
+##### Overall distributions
+What's each author's overall tendency toward positive or negative sentences?
+###### EAP
+![EAP sentiment distribution](./figs/g_EAP_sentiment_dist.png)
+
+###### HPL
+![HPL sentiment distribution](./figs/g_HPL_sentiment_dist.png)
+
+###### MWS
+![MWS sentiment distribution](./figs/g_MWS_sentiment_dist.png)
 
 #### Formality
 
-Who tends to be more formal?
+Who tends to be more formal? According to an analysis, samples from Poe tend to be the most formal, and Shelley the least. See "spooky.rmd" in the "/doc/" folder for more information!
 
 #### Readability
 
-Who tends to be the most readable, or least?
+Who tends to be the most readable, or least? The following calculations use the [classic Flesch-Kinciad measure](https://en.wikipedia.org/wiki/Flesch?Kincaid_readability_tests) to compute readability scores.
+
+##### EAP
+![EAP readability distribution](./figs/g_EAP_read.png)
+
+##### HPL
+![HPL readability distribution](./figs/g_HPL_read.png)
+
+##### MWS
+![MWS readability distribution](./figs/g_MWS_read.png)
+
 
 ### Topics
 
-What kinds of topics are they writing about?
+What kinds of topics are our authors writing about?
 
 #### Algorithm 1
 Generate some possible topics, the words associated with them, and some example sentences!
