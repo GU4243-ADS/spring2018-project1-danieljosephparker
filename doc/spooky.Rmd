@@ -14,19 +14,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
+What's the scope of this *terrifying* project?
+
 We're going to try to figure out as much as we can about the writing styles of three authors using natural language processing methods.
 
 The three authors are Mary Wollstonecraft Shelley, H. P. Lovecraft, and Edgar Allen Poe.
 
-This data originally comes from a Kaggle dataset we'll call the Spooky Dataset. This was part of a [competition](https://www.kaggle.com/c/spooky-author-identification) that happened in late 2017.
+This data originally comes from a Kaggle dataset we'll call the Spooky Dataset. This was part of a [competition](https://www.kaggle.com/c/spooky-author-identification) that happened in late 2017. That project involved building an author predictor, which we don't do here.
 
 ## Basic issues
 
 * Are we doing analysis at the word, phrase, sentence, or corpus level?
 
-* I'm noticing there are more interesting and sensitive analyses I might like to do, but I'm running up against some limits in terms of trying to become more sophisticated at writing in `R` and in terms of time! 
-
-** I recognize that a lot of this code follows the pattern of naming variables, executing functions, and drawing up plots three times, but I'm not good enough at R to do the string formatting necessary to condense all of this into individual function calls that operate on all three authors.
+* I'm noticing there are some more interesting and sensitive analyses I can conceptualize that I might like to do -- but I'm running up against some limits in terms of time *and* in terms of trying to become more sophisticated at writing in `R`! 
+  + Along these lines, I recognize that a lot of this code follows the pattern of 1) naming variables, 2) executing functions, and 3) drawing up plots, with identical code $\times$ three.
+  + I'm not yet good enough at R to do the string formatting necessary to condense all of this into individual function calls that operate on all three authors.
 
 # First steps
 
@@ -123,7 +125,7 @@ spooky <- read.csv('../data/spooky.csv', as.is = TRUE)
 
 Now, we run some familiar summarizing functions in base R to get a sense of what we're dealing with.
 
-```{r Basic characeristics}
+```{r Basic characeristics, echo=TRUE}
 # What format are the data in?
 class(spooky)
 
