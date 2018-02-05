@@ -510,39 +510,27 @@ We're going to make up a paragraph by using the trigrams we generated! Maybe thi
 Let's look at a few randomly chosen sentences and what words from each are positive and negative. The blank spaces mean there wasn't any word in that category (positive or negative) in that sentence.
 
 ###### EAP
-negative			positive
-            
-					free
+negative
+> alas confusion despair surrender
 
-alas          
-
-confusion,despair	lighten
-
-					gentleman
-
-surrender       
+positive
+> free lighten gentleman 
 
 ###### HPL
-negative	positive
-   
-needless	wonderful,ingenious,useful,useful,like,like,
+negative
+> needless ill
 
-ill                                             
-
-			properly,natural
-
+positive
+> wonderful ingenious useful useful like like properly natural
                                                    
-
 ###### MWS
-negative								positive
+negative
+> slow epidemic force pernicious harm wretched die fear famine struck wild
 
-slow									restored,wonderfully
+(Yeah, that seems right!)
 
-epidemic,force,pernicious,harm
-
-										adorned,aid,art,favour
-
-wretched,die,fear,famine,struck,wild,							(yeah, that seems right!)
+positive
+> restored wonderfully adorned aid art favour
 
 ##### Most extreme sentences
 What are the most positive and negative sentences? From these examples, it's clear what a crude metric the sentiment calculation is: more of a heuristic than a really reflective score. Still, it's interesting to look at!
