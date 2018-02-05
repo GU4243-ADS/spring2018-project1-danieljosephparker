@@ -609,77 +609,35 @@ We use a topic modeling algorithm called LDA, with a sampling algorithm called G
 
 ##### Terms associated with generated topics
 	
-1
-yet
-now
-seemed
-first
-might
-will
-upon
-far
-one
-man
+1.
+> yet life ever heart even love
 
-2
-life
-friend
-eyes
-made
-much
-said
-left
-came
-time
-old
+2.
+> now friend raymond gave place father
 
-3
-ever
-raymond
-thought
-thus
-however
-never
-room
-like
-night
-great
+3.
+> seemed eyes thoguht still felt heart
 
-4
-heart
-gave
-still
-every
-indeed
-must
-door
-saw
-day
-things
+4.
+> first made thus every now without
 
-5
-even
-place
-felt
-now
-although
-little
-head
-light
-many
-men
+5. 
+> might much however indeed although even
 
-6
-love
-father
-heard
-without
-even
-can
-hand
-beyond
-long
-house
+6.
+> will said never must little can
+
+7.
+> upon left room door head hand
+
+8.
+> far came like saw light beyond
+
+9.
+> one time night day many long
+
+10.
+> man old great things men house
 
 ##### Most representative sentences for each topic
 
@@ -720,9 +678,66 @@ house
 This time, we use CTM, and show the same results. Didn't have time for the algorithm to finish running by class, sorry!
 
 ##### Terms associated with generated topics
+1.
+> will said may can never shall
+
+2.
+> upon made well say however matter
+
+3.
+> eyes life death mind heart love
+
+4.
+> one two door room three body
+
+5.
+> night came saw light heard like
+
+6.
+> now upon must thus still let
+
+7. 
+> men though old street town trees
+
+8.
+> half left something old like began
+
+9.
+> things strange told old like ancient
+
+10.
+> man every time long day seemed
 
 ##### Most representative sentences for each topic
+1.
+> Ven I go marry my segonde usbande, Monsieur Lalande, at dat time I had de portraite take for my daughter by my first usbande, Monsieur Moissart" "Moissart" said I. "Yes, Moissart," said she, mimicking my pronunciation, which, to speak the truth, was none of the best, "and vat den?
 
+2.
+> He touched upon Latour and Markbrünnen; upon Mousseux and Chambertin; upon Richbourg and St. George; upon Haubrion, Leonville, and Medoc; upon Barac and Preignac; upon Grâve, upon Sauterne, upon Lafitte, and upon St. Peray.
+
+3.
+> All the genius that ennobled the blood of her father illustrated hers; a generous tide flowed in her veins; artifice, envy, or meanness, were at the antipodes of her nature; her countenance, when enlightened by amiable feeling, might have belonged to a queen of nations; her eyes were bright; her look fearless.
+
+4.
+> Before seating himself across the table from me, my host paused for a moment as if in embarrassment; then, tardily removing his gloves, wide brimmed hat, and cloak, stood theatrically revealed in full mid Georgian costume from queued hair and neck ruffles to knee breeches, silk hose, and the buckled shoes I had not previously noticed.
+
+5.
+> Endlessly down the horsemen floated, their chargers pawing the aether as if galloping over golden sands; and then the luminous vapours spread apart to reveal a greater brightness, the brightness of the city Celephaïs, and the sea coast beyond, and the snowy peak overlooking the sea, and the gaily painted galleys that sail out of the harbour toward distant regions where the sea meets the sky.
+
+6.
+> His full name long and pompous according to the custom of an age which had lost the trinomial simplicity of classic Roman nomenclature is stated by Von Schweinkopf to have been Caius Anicius Magnus Furius Camillus Æmilianus Cornelius Valerius Pompeius Julius Ibidus; though Littlewit rejects Æmilianus and adds Claudius Decius Junianus; whilst Bêtenoir differs radically, giving the full name as Magnus Furius Camillus Aurelius Antoninus Flavius Anicius Petronius Valentinianus Aegidus Ibidus.
+
+7.
+> In the brooding fire of autumn Carter took the old remembered way past graceful lines of rolling hill and stone walled meadow, distant vale and hanging woodland, curving road and nestling farmstead, and the crystal windings of the Miskatonic, crossed here and there by rustic bridges of wood or stone.
+
+8.
+> We have it upon good authority, that Mr. Fatquack received no less than sixty two cents and a half for his late Domestic Nouvelette, the 'Dish Clout.' "The contributors to the number before us are Mr. Crab, the eminent editor, Snob, Mumblethumb, Fatquack, and others; but, after the inimitable compositions of the editor himself, we prefer a diamond like effusion from the pen of a rising poet who writes over the signature 'Snob' a nom de guerre which we predict will one day extinguish the radiance of 'Boz.' 'Snob,' we learn, is a Mr. Thingum Bob, Esq., sole heir of a wealthy merchant of this city, Thomas Bob, Esq., and a near relative of the distinguished Mr. Thingum.
+
+9.
+> Cxxl, nxw cxxl Dx be cxxl, yxu fxxl Nxne xf yxur crxwing, xld cxck Dxn't frxwn sx dxn't Dxn't hxllx, nxr hxwl, nxr grxwl, nxr bxw wxw wxw Gxxd Lxrd, Jxhn, hxw yxu dx lxxk Txld yxu sx, yxu knxw, but stxp rxlling yxur gxxse xf an xld pxll abxut sx, and gx and drxwn yxur sxrrxws in a bxwl' The uproar occasioned by this mystical and cabalistical article, is not to be conceived.
+
+10.
+> My father was expected at noon but when I wished to return to meet him I found that I had lost my way: it seemed that in every attempt to find it I only became more involved in the intracacies of the woods, and the trees hid all trace by which I might be guided.
 
 ## Conclusion
 
