@@ -1,7 +1,7 @@
 ---
 title: "Spooky Data Analysis"
 author: "Daniel Joseph Parker"
-date: "Thursday, February 1st, 2018"
+date: "Monday, February 1st, 2018"
 output:
   pdf_document: default
   html_document:
@@ -1084,9 +1084,9 @@ MWS_ent[5:6]
 
 In the samples that I did on my computer, there are sometimes some funny examples included (e.g., "Legs"). Overall, the annotator seems to do great, though!
 
-## N-grams
+# N-grams
 
-### Bi-grams
+## Bi-grams
 
 We'll use `tidytext` to generate bigrams.
 
@@ -1163,7 +1163,7 @@ wordcloud(MWS_bigrams$bigram, MWS_bigrams$n, max.words=50, colors=MWS_seq_colors
 dev.off()
 ```
 
-### N-grams, n > 2
+## N-grams, n > 2
 
 We'll use some of the speedy functionality of the `ngram` package for some more fun. Let's investigate some n-grams, with no stop words removed. I wrote this code for trigrams, but `num` can be changed if the reader is interested in larger n-grams.
 
@@ -1203,7 +1203,7 @@ head(get.phrasetable(MWS_ng), phrase_num)
 # are going to involve lots of stopwords.
 ```
 
-### Babbling! 
+## Babbling! 
 
 Here, we can use a fun function built into the `ngram` package that uses Markov chains to babble ngrams to create new sentences, in the voice of whatever corpus the `ngram` object was generated on! Note that the fact we *haven't* removed stop words will be helpful for making the babbling lifelike.
 
@@ -1428,7 +1428,7 @@ HPL_formality$formality$formality
 MWS_formality$formality$formality
 ```
 
-### Readability
+## Readability
 
 We'll use the package `quanteda` to generate readability scores for each of the author's sets of sentences. We'll use the [classic Flesch-Kinciad measure](https://en.wikipedia.org/wiki/Flesch–Kincaid_readability_tests) to compute the scores.
 
