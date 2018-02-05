@@ -1,4 +1,9 @@
 # Project 1: 
 ### Doc folder
 
-The doc directory contains the report or presentation files. It can have subfolders.  
+Spooky Dataset Analysis
+Project author: Daniel Joseph Parker
+
+"project_description.Rmd" includes the assignment from Professor Cynthia Rush.
+
+"spooky.Rmd" is the comprehensive documentation of my analysis, including all code, discussions of method and motivation, and plots.

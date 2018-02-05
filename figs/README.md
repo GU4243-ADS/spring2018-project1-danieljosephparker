@@ -1,4 +1,6 @@
 # Project 1: 
 ### Figs folder
 
-The figs directory contains the figures. This directory only contains generated files; that is, one should always be able to delete the contents and regenerate them.
+All the figures generated from within the main /doc/spooky.rmd R Markdown document.
+
+Note that "raven.gif", "cthulhu.jpg", and "frankenstein.jpg" are not generated from spooky.rmd and reproducible from it. Rather, they are saved from websites.
