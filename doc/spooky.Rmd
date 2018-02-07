@@ -578,7 +578,7 @@ HPL_seq_colors <- colorRampPalette(brewer.pal(9, "Blues"))(20)
 MWS_seq_colors <- colorRampPalette(brewer.pal(9, "Greens"))(20)
 ```
 
-```{r Wordclouds of most common words}
+```{r Wordclouds of most common words, warning=FALSE}
 # We can easily change the number of words included in each cloud; just change num_words.
 num_words <- 50
 
@@ -605,7 +605,7 @@ wordcloud(MWS_words_ranked$.,
           colors = MWS_seq_colors)
 ```
 
-```{r Create wordcloud PDFs & PNGs, message=FALSE}
+```{r Create wordcloud PDFs & PNGs, message=FALSE, warning=FALSE}
 pdf("../figs/EAP_common_wordcloud.pdf")
 wordcloud(EAP_words_ranked$.,
           EAP_words_ranked$Freq,
@@ -658,7 +658,7 @@ dev.off()
 
 What if we go further down the list?
 
-```{r Wordclouds of less common words}
+```{r Wordclouds of less common words, warning=FALSE}
 # How many words do we want to visualize?
 num_words <- 50
 
@@ -686,7 +686,7 @@ wordcloud(mid_MWS$., mid_MWS$Freq, scale = constant_scale,
           max.words = num_words, colors = MWS_seq_colors)
 ```
 
-```{r Create more wordcloud PDFs, message=FALSE}
+```{r Create more wordcloud PDFs, message=FALSE, warning=FALSE}
 pdf("../figs/EAP_mid_wordcloud.pdf")
 wordcloud(mid_EAP$., mid_EAP$Freq, scale = constant_scale, max.words = num_words, colors = EAP_seq_colors)
 dev.off()
@@ -745,7 +745,7 @@ low_MWS <-
 
 And voila:
 
-```{r Wordclouds of really uncommon words}
+```{r Wordclouds of really uncommon words, warning=FALSE}
 # Note that these wordclouds should be different every time the preceding
 # code chunk is run, because it creates a random selection.
 wordcloud(low_EAP$., low_EAP$Freq, scale = constant_scale,
@@ -756,7 +756,7 @@ wordcloud(low_MWS$., low_MWS$Freq, scale = constant_scale,
           max.words = num_words, colors = MWS_seq_colors)
 ```
 
-```{r Generate more wordcloud PDFs, message=FALSE}
+```{r Generate more wordcloud PDFs, message=FALSE, warning=FALSE}
 pdf("../figs/EAP_low_wordcloud.pdf")
 wordcloud(low_EAP$., low_EAP$Freq, scale = constant_scale, max.words = num_words, colors = EAP_seq_colors)
 dev.off()
@@ -1193,7 +1193,7 @@ wordcloud(HPL_bigrams$bigram, HPL_bigrams$n, max.words=50, colors=HPL_seq_colors
 wordcloud(MWS_bigrams$bigram, MWS_bigrams$n, max.words=50, colors=MWS_seq_colors)
 ```
 
-```{r Save bigram wordclouds, message=FALSE}
+```{r Save bigram wordclouds, message=FALSE, warning=FALSE}
 pdf("../figs/EAP_bigram_wordcloud.pdf")
 wordcloud(EAP_bigrams$bigram, EAP_bigrams$n, max.words=50, colors=EAP_seq_colors)
 dev.off()
@@ -1449,22 +1449,22 @@ min_MWS_sentence
 
 Let's use the enormous `qdap` package to investigate formality.
 
-```{r Formality calculation}
+```{r Formality calculation, message=FALSE}
 # These formality objects contain an immense amount of information.
 EAP_formality <- formality(EAP_sample$., order.by.formality = TRUE)
 HPL_formality <- formality(HPL_sample$., order.by.formality = TRUE)
 MWS_formality <- formality(MWS_sample$., order.by.formality = TRUE)
 ```
 
-The following plots include a huge amount of information.
+The following plots include a huge amount of information. I've included the code, even though I didn't have time to really interpret the information included.
 
-```{r Generate formality plots, eval=FALSE}
+```{r Generate formality plots, eval=FALSE, include=TRUE}
 g_EAP_form <- plot(EAP_formality)
 g_HPL_form <- plot(HPL_formality)
 g_MWS_form <- plot(MWS_formality)
 ```
 
-```{r Visualize formalities}
+```{r Visualize formalities, eval=FALSE, include=TRUE}
 # Within the markdown document, let's only look at the first plot
 # each of these objects contains. The other two are not very informative.
 g_EAP_form$f1 + labs(subtitle = "EAP")
@@ -1706,7 +1706,7 @@ best <- TRUE
 topic_num <- 10
 ```
 
-```{r Run LDA with Gibbs sampling}
+```{r Run LDA with Gibbs sampling, eval=FALSE}
 # This takes a long time.
 # The object produced is more than 10 Mb.
 spooky_LDA_Out <- LDA(spooky_DTM, topic_num, 
@@ -1720,7 +1720,14 @@ spooky_LDA_Out <- LDA(spooky_DTM, topic_num,
                         thin = thin_factor))
 ```
 
-```{r eval=FALSE, include=FALSE}
+```{r Save LDA object externally, eval=FALSE, include=TRUE}
+# In order to knit this markdown document into HTML more quickly,
+# we'll just save the generated topic model object so that we
+# don't have to run the algorithm every time.
+saveRDS(spooky_LDA_Out, file = "../output/spooky_LDA_Out.rds")
+```
+
+```{r eval=FALSE, include=TRUE}
 # Also, let's do topic modeling on each individual author to see if
 # the topics generated are more descriptive.
 
@@ -1760,6 +1767,9 @@ MWS_LDA_Out <- LDA(MWS_DTM, topic_num,
 ```
 
 ```{r Results}
+# Reference the CTM object stored in /output/.
+spooky_LDA_Out <- readRDS("../output/spooky_LDA_Out.rds")
+
 # Create attribute on LDA object that is a matrix,
 # where each row is the document number,
 # and the one column is topic number,
@@ -1780,7 +1790,7 @@ spooky_LDA_Out.terms <- as.matrix(terms(spooky_LDA_Out, term_number))
 spooky_probs <- as.data.frame(spooky_LDA_Out@gamma)
 ```
 
-```{r eval=FALSE, include=FALSE}
+```{r eval=FALSE, include=TRUE}
 # Can turn on code evaluation if you want to see data for individual authors.
 
 # This code: never run.
@@ -1870,15 +1880,30 @@ To my eye, the most revealing of these topic descriptions is "V3", whose corresp
 
 We'll create topic models for the Spooky Dataset using the Correlated Topic Models algorithm, and see how they might be different or similar to those generated from LDA.
 
-```{r}
+```{r, eval=FALSE, include=TRUE}
 # This takes a long time.
 spooky_CTM_Out <- CTM(spooky_DTM, topic_num)
 ```
 
+```{r Save CTM object externally, eval=FALSE, include=TRUE}
+# In order to knit this markdown document into HTML more quickly,
+# we'll just save the generated topic model object so that we
+# don't have to run the algorithm every time.
+saveRDS(spooky_CTM_Out, file = "../output/spooky_CTM_Out.rds")
+```
+
 ```{r}
+# Reference the CTM object stored in /output/.
+spooky_CTM_Out <- readRDS("../output/spooky_CTM_Out.rds")
+
+# Create matrix of topics assigned to documents.
 spooky_CTM_Out.topics <- as.matrix(topics(spooky_CTM_Out))
 term_number <- 6
+
+# Create matrix of terms assigned to topics.
 spooky_CTM_Out.terms <- as.matrix(terms(spooky_CTM_Out, term_number))
+
+# Create dataframe of sentence topic probabilities.
 spooky_CTM_probs <- as.data.frame(spooky_CTM_Out@gamma)
 ```
 
