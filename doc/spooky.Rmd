@@ -1782,6 +1782,8 @@ spooky_probs <- as.data.frame(spooky_LDA_Out@gamma)
 
 ```{r eval=FALSE, include=FALSE}
 # Can turn on code evaluation if you want to see data for individual authors.
+
+# This code: never run.
 EAP_LDA_Out.topics <- as.matrix(topics(EAP_LDA_Out))
 EAP_LDA_Out.terms <- as.matrix(terms(EAP_LDA_Out, term_number))
 EAP_probs <- as.data.frame(EAP_LDA_Out@gamma)
@@ -1869,6 +1871,7 @@ To my eye, the most revealing of these topic descriptions is "V3", whose corresp
 We'll create topic models for the Spooky Dataset using the Correlated Topic Models algorithm, and see how they might be different or similar to those generated from LDA.
 
 ```{r}
+# This takes a long time.
 spooky_CTM_Out <- CTM(spooky_DTM, topic_num)
 ```
 
